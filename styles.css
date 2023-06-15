@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -15,4 +17,170 @@ body {
   overflow: hidden;
   background-color: lightgray;
   height: 600px;
+}
+
+/* Search section*/
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.6em 1em;
+  border-radius: 24px;
+  margin-left: 20px;
+  margin-top: 15px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 100%;
+  width: calc(100% - 100px);
+}
+
+button {
+  margin: 0.5em;
+  margin-right: 20px;
+  margin-top: 19px;
+  border-radius: 50%;
+  border: none;
+  height: 38px;
+  width: 38px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+.search-icon {
+  color: white;
+}
+
+/* Main */
+
+.wrapper {
+  position: relative;
+  color: white;
+  margin: 0px 20px;
+  padding: 0 15px 0 15px;
+}
+
+.tempText {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.tempNumber {
+  font-size: 100px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.tempTextCelsius {
+  display: inline;
+  font-size: 36px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.cityText {
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0 0 10px 0;
+}
+
+.local-time, .local-date {
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+}
+
+.description-icon {
+  display: flex;
+  margin-top: 10px;
+}
+
+.describeText {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  margin: auto 0 auto 0;
+}
+
+.icon {
+  position: relative;
+  object-fit: cover;
+  height: 62px;
+  width: 82px;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  text-align: center;
+  color: darkgrey;
+}
+
+footer a:hover {
+  opacity: 0.5;
+  transition: 0.2s ease-in-out;
+}
+
+footer a, footer a:visited {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+/* Styles for desktop and tablet */
+
+@media (min-width: 500px) {
+
+  body {
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-color: #faf9f9;
+  }
+
+  .container {
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: lightgray;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .tempNumber {
+    font-size: 110px;
+  }
+
+  .tempTextCelsius {
+    font-size: 40px;
+  }
+
+ .cityText {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .local-time, .local-date {
+    font-size: 20px;
+  }
+
+  .describeText {
+    font-size: 18px;
+  }
 }
